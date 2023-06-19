@@ -28,5 +28,10 @@ WriteLine(format: "key: {0} has value: {1}",
 Dictionary<int, string> lookupIntString = new();
 lookupIntString.Add(key: 1, value: "Alpha");
 lookupIntString.Add(key: 2, value: "Beta");
-lookupIntString.Add(key: 3, value: "Gawmma");
-lookupIntString.Add(key: harry, value: "Delta");
+lookupIntString.Add(key: 3, value: "Gamma");
+lookupIntString.Add(key: 4, value: "Delta");
+
+key = 3;
+WriteLine(format: "key: {0} has value: {1}",
+   arg0: key,
+   arg1: lookupIntString[key]);
