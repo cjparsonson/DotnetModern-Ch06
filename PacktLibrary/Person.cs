@@ -1,6 +1,6 @@
 ﻿namespace Packt.Shared
 {
-    public class Person : Object
+    public class Person : Object, IComparable<Person?>
     {
         // Properties
         public string? Name { get; set; }
