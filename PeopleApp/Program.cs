@@ -47,6 +47,7 @@ harry.Poke();
 
 Person?[] people =
 {
+    null,
     new() { Name = "Simon" },
     new() { Name = "Jenny" },
     new() { Name = "Adam" },
@@ -58,3 +59,6 @@ Array.Sort(people);
 OutputPeopleNames(people,
     "After using Person IComparable implementation to sort:");
 
+Array.Sort(people, new PersonComparer());
+OutputPeopleNames(people,
+       "After using PersonComparer IComparer implementation to sort:");
