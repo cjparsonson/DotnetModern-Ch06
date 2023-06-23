@@ -62,3 +62,10 @@ OutputPeopleNames(people,
 Array.Sort(people, new PersonComparer());
 OutputPeopleNames(people,
        "After using PersonComparer IComparer implementation to sort:");
+
+
+// Equality
+int a = 3;
+int b = 3;
+WriteLine($"a: {a}, b: {b}");
+WriteLine($"a == b: {(a == b)}");
