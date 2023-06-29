@@ -13,3 +13,14 @@ WriteLine(thisCouldBeNull.GetValueOrDefault());
 Nullable<int> thisCouldAlsoBeNull = null;
 thisCouldAlsoBeNull = 7;
 WriteLine(thisCouldAlsoBeNull);
+
+Address address = new()
+{
+    Building = null,
+    Street = null!, // ! is the null-forgiving operator
+    City = "London",
+    Region = "UK"
+};
+
+WriteLine(address.Building?.Length); // throws NullReferenceException ? fixes it (null conditional operator)
+WriteLine(address.Street.Length); 
