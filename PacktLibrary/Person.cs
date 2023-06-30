@@ -71,5 +71,11 @@ namespace Packt.Shared
             return position;
             
         }
+
+        // overidden methods
+        public override string ToString()
+        {
+            return $"{Name} is a {base.ToString()}";
+        }
     }
 }
