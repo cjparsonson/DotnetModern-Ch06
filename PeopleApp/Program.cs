@@ -103,5 +103,40 @@ WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
 
 WriteLine(john.ToString());
 
+Employee aliceInEmployee = new()
+{ Name = "Alice", EmployeeCode = "AA123" };
+Person aliceInPerson = aliceInEmployee;
+aliceInEmployee.WriteToConsole();
+aliceInPerson.WriteToConsole();
+WriteLine(aliceInEmployee.ToString());
+WriteLine(aliceInPerson.ToString());
+
+if (aliceInPerson is Employee)
+{
+    WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+    Employee explicitAlice = (Employee)aliceInPerson;
+    // safely do something with explicitAlice
+}
+
+Employee? aliceAsEmployee = aliceInPerson as Employee; // Could be null
+if (aliceAsEmployee is not null)
+{
+    WriteLine($"{nameof(aliceInPerson)} AS an Employee");
+    // safely do something with aliceAsEmployee
+}
+
+try
+{
+    john.TimeTravel(new(year: 1999, month: 12, day: 31));
+    john.TimeTravel(new(year: 1950, month: 12, day: 25));
+}
+catch (PersonException ex)
+{
+    WriteLine(ex.Message);
+}
+
+
+
+
 
 
