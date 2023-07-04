@@ -136,7 +136,14 @@ catch (PersonException ex)
 }
 
 
-
+string email1 = "chris@test.com";
+string email2 = "ian&test.com";
+WriteLine("{0} is a valid email address: {1}",
+    arg0: email1,
+    arg1: StringExtensions.IsValidEmail(email1));
+WriteLine("{0} is a valid email address: {1}",
+    arg0: email2,
+    arg1: StringExtensions.IsValidEmail(email2));
 
 
 
