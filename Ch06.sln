@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleApp", "PeopleApp\Peop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullHandling", "NullHandling\NullHandling.csproj", "{4B878540-9D97-434D-AE2F-7E1A8324290C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarningsAsErrors", "WarningsAsErrors\WarningsAsErrors.csproj", "{073D93F6-B658-44BF-A91E-C05B91755F78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarningsAsErrors", "WarningsAsErrors\WarningsAsErrors.csproj", "{073D93F6-B658-44BF-A91E-C05B91755F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyzing", "CodeAnalyzing\CodeAnalyzing.csproj", "{8F88074F-5D6A-413A-A153-7E5803C370E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAnalyzing", "CodeAnalyzing\CodeAnalyzing.csproj", "{8F88074F-5D6A-413A-A153-7E5803C370E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06Ex02Inheritance", "Ch06Ex02Inheritance\Ch06Ex02Inheritance.csproj", "{4CD204F2-54C3-4BC4-8639-EAEC60A6F909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8F88074F-5D6A-413A-A153-7E5803C370E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F88074F-5D6A-413A-A153-7E5803C370E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F88074F-5D6A-413A-A153-7E5803C370E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD204F2-54C3-4BC4-8639-EAEC60A6F909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD204F2-54C3-4BC4-8639-EAEC60A6F909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD204F2-54C3-4BC4-8639-EAEC60A6F909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD204F2-54C3-4BC4-8639-EAEC60A6F909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
